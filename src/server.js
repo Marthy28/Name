@@ -22,7 +22,7 @@ app.use(morgan('short'))
 
 app.get('/', function(req, res) {
 	res.send("hélo ouorlde")
-}
+});
 
 /*console.log("Je te défonce")
 console.log("Je te défonce")
