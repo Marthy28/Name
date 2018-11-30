@@ -20,6 +20,7 @@ app.get('/', function (req, res) {
 })
 
 console.log("Je te défonce")
+console.log("Je te défonce")
 
 // Add a new user to the database
 app.post('/', function(req, res) {
