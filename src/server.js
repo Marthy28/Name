@@ -12,20 +12,18 @@ app.use(bodyParser.json())
 app.use(morgan('short'))
 
 // Get all the users defined
-/*app.get('/', function (req, res) {
+app.get('/', function (req, res) {
   models.User.findAll()
     .then((users) => {
       res.json(users)
     })
 })
-*/
 
-app.get('/', function(req, res) {
+
+app.get('/hello', function(req, res) {
 	res.send("hélo ouorlde")
 });
 
-/*console.log("Je te défonce")
-console.log("Je te défonce")
 
 // Add a new user to the database
 app.post('/', function(req, res) {
@@ -36,11 +34,11 @@ app.post('/', function(req, res) {
       res.send('User added !')
     })
 })
-*/
+
 // Synchronize models
-//models.sequelize.sync().then(function() {
+models.sequelize.sync().then(function() {
 
   app.listen(process.env.PORT, function() {
     console.log('Express server listening on port 8080')
   });
-//});
+});
