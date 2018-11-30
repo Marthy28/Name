@@ -19,6 +19,8 @@ app.get('/', function (req, res) {
     })
 })
 
+console.log("Je te défonce")
+
 // Add a new user to the database
 app.post('/', function(req, res) {
   models.User.create({
@@ -40,5 +42,3 @@ models.sequelize.sync().then(function() {
     console.log('Express server listening on port 3000');
   });
 });
-
-console.log("jhvv")
